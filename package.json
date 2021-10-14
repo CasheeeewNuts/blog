@@ -25,7 +25,8 @@
     "pretest": "npm run generate",
     "test": "jest",
     "pretypecheck": "npm run generate",
-    "typecheck": "tsc --noEmit && tsc --noEmit -p server"
+    "typecheck": "tsc --noEmit && tsc --noEmit -p server",
+    "build:tailwind": "tailwind build styles/index.css -o styles/tailwind.css"
   },
   "dependencies": {
     "@aspida/axios": "^1.7.1",
@@ -38,7 +39,8 @@
     "prisma": "^2.21.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "swr": "^0.5.5"
+    "swr": "^0.5.5",
+    "tailwindcss": "^2.2.17"
   },
   "devDependencies": {
     "@testing-library/react": "^11.2.6",
